@@ -20,6 +20,18 @@ cat /etc/passwd | awk -F: '{print $1}'
 # Varios comandos  a la vez
 cat /etc/passwd & ls -la
 
+
+
+
+ls -la /home/tavo962/Desktop/git & ls -la /home/tavo962/ | awk '{print $9}'
+
+ls -la /home/tavo962/Desktop/git & ls -la /home/tavo962/ | awk '$6 = "oct" {print $9}'
+
+
+ls -la /home/tavo962/Desktop/git & ls -la /home/tavo962/ | awk '$6 = "oct" {print $9}'
+
+awk '{print $1, $3}' data.csv
+
 # Conectar comandos con un pipe
 
 4. Crear un nuevo dataset csv a partir de uno grande.
